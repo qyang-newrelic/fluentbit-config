@@ -17,9 +17,9 @@ function check_time(tag,timestamp,record)
     newData["logGenTime"] = timestamp 
     newData["logLagTime"] = now - timestamp 
     if now - timestamp > ttl then
-        newData["logTTL"] = "Remove"
+        newData["logTTLStatus"] = "Remove"
     else
-        newData["logTTL"] = "Keep"
+        newData["logTTLStatus"] = "Keep"
     end 
 
     return 1, timestamp, newData
