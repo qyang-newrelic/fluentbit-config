@@ -1,4 +1,3 @@
-# fluentbit-config
 
 # Use New Relic Infra agent (Fluentbit) to process logs
 
