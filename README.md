@@ -1,5 +1,5 @@
 
-# Use New Relic Infra agent (Fluentbit) to process logs
+# Use New Relic Infra agent to process logs
 
 
 ## Process Log data using LUA filter 
