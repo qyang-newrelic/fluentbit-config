@@ -18,11 +18,13 @@ function check_time(tag,timestamp,record)
     newData["logLagTime"] = now - timestamp 
     if now - timestamp > ttl then
         newData["logTTLStatus"] = "Remove"
+        -- drop the record
+        return 1, 0, 0
+        -- return 1, timestamp, newData
     else
         newData["logTTLStatus"] = "Keep"
+        return 1, timestamp, newData
     end 
-
-    return 1, timestamp, newData
 end
 
 
