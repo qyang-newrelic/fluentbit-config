@@ -1,6 +1,7 @@
 # fluentbit-config
 
-# Some Examples to process log data using New Relic Infra agent (Fluentbit)
+# Use New Relic Infra agent (Fluentbit) to process logs
+
 
 ## Process Log data using LUA filter 
 ```
