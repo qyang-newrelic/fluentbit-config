@@ -10,7 +10,7 @@ logs:
     fluentbit:
       config_file: /etc/newrelic-infra/logging.d/custom/qiyang.conf
       
-cat /etc/newrelic-infra/logging.d/custom/qiyang.conf
+[qyang@box19 fluentbit-config]$ cat /etc/newrelic-infra/logging.d/custom/qiyang.conf
 [FILTER]
     Name                lua
     Match               *
